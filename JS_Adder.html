@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title> JS Adder </title>
+</head>
+
+<body>
+	<h1 id="demo">0 </h1>
+	<button onclick="addOne()"> Add 1 </button>
+	<button onclick="addFive()"> Add 5 </button>
+	<button onclick="clearNum()"> Clear </button>
+	
+	<script>
+		var num = 0; //Variable that holds the total.
+		
+		//Purpose: Adds one to num and updates the output
+		function addOne() {
+			num += 1;
+			document.getElementById("demo").innerHTML = num;
+		}
+		
+		//Purpose: adds 5 to num and updates the output
+		function addFive() {
+			num += 5;
+			document.getElementById("demo").innerHTML = num;
+		}
+		
+		//Purpose: resets num to 0 and updates the output
+		function clearNum() {
+			num = 0;
+			document.getElementById("demo").innerHTML = num;
+		}
+		
+	</script>
+</body>
+</html>
